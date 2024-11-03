@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --cor-principal:#ffffff;
+  --cor-fundo-principal:rgb(61, 159, 250);
+  --cor-fundo-secundario:rgb(0, 48, 131);
+  --fonte-principal:'Roboto'
+}
+
+body {
+  color:var(--cor-principal);
+  background-color:var(--cor-fundo-principal);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.container {
+  display:grid;
+  grid-template-columns: 50% 50%;
+  margin-left:15em;
+  /* height: 100vh; */
+}
+
+.conteudo {
+  text-align: center;
+  width:60%;
+  align-items: center;
+}
+
+.cont__titulo {
+  font-family: var(--fonte-principal);
+  font-size:36px;
+  margin-bottom: 1rem;
+}
+
+.cont__bar {
+  display:block;
+  background-color: var(--cor-fundo-secundario);
+  height:4px;
+  border:1px solid black;
+  margin-bottom:1rem;
+}
+
+.cont__texto{
+  font-family: var(--fonte-principal);
+  margin-bottom: 1.5rem;
+}
+
+.cont__image {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width:65%;
+  background-color: var(--cor-fundo-secundario);
+  padding:1em 2em;
+  border-radius:8px;
+}
+
+.form__titulo {
+  font-size: 24px;
+  font-family:var(--fonte-principal);
+  margin-bottom:1rem;
+}
+
+.form__texto {
+  margin-bottom: 1rem;
+}
+
+.form__inputs {
+  display:flex;
+  flex-direction: column;
+  gap:0.3rem;
+  margin-bottom: 2rem;
+}
+
+.form__inputs input {
+  padding:5px;
+  border-radius:4px;
+}
+
+.form__inputs select {
+  padding:5px;
+  border-radius:4px; 
+}
+
+.form__botao {
+  background-color: orange;
+  padding:9px;
+  color:white;
+  font-weight: 600;
+}
+
+.form__aviso {
+  font-size: small;
+}
